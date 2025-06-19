@@ -8,30 +8,30 @@ int main() {
     int op; char op2;
     do {
         do {
-            printf("===============================\n   Calculadora Simples\n===============================\nSelecione uma operação:\n1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Sair\nOpção:");
+            printf("===============================\n   Calculadora Simples\n===============================\nSelecione uma operacao:\n1. Adicao\n2. Subtracao\n3. Multiplicacao\n4. Divisao\n5. Sair\nOpcao:");
             scanf("%d", &op);
-            if (op < 1 || op > 5) printf("Opção inválida. Digite apenas uma das opções fornecidas.\n");
+            if (op < 1 || op > 5) printf("Opção invalida. Digite apenas uma das opcoes fornecidas.\n");
         } while (op < 1 || op > 5);
         if (op == 5) {
-            printf("Obrigado por usar a calculadora! Até a próxima.\n");
+            printf("Obrigado por usar a calculadora! Ate a proxima.\n");
             return 0;
         }
         float n1, n2;
-        printf("Digite o primeiro número: "); scanf("%f", &n1);
-        printf("Digite o segundo número: "); scanf("%f", &n2);
+        printf("Digite o primeiro numero: "); scanf("%f", &n1);
+        printf("Digite o segundo numero: "); scanf("%f", &n2);
         if (op == 1) printf("Resultado: %.0f + %.0f = %.0f\n", n1, n2, n1 + n2);
         else if (op == 2) printf("Resultado: %.0f - %.0f = %.0f\n", n1, n2, n1 - n2);
         else if (op == 3) printf("Resultado: %f x %f = %f\n", n1, n2, n1 * n2);
         else {
-            if (n2 == 0) printf("Erro: Divisão por zero não é permitida.\n");
+            if (n2 == 0) printf("Erro: Divisao por zero nao e permitida.\n");
             else printf("Resultado: %f / %f = %f\n", n1, n2, n1 / n2);
         }
         do {
-            printf("Deseja realizar outra operação? (s/n):"); scanf(" %c", &op2);
-            if (op2 != 's' && op2 != 'S' && op2 != 'N' && op2 != 'n') printf("Resposta inválida. Por favor, digite 's' para sim ou 'n' para não.\n");
+            printf("Deseja realizar outra operacao? (s/n):"); scanf(" %c", &op2);
+            if (op2 != 's' && op2 != 'S' && op2 != 'N' && op2 != 'n') printf("Resposta invalida. Por favor, digite 's' para sim ou 'n' para nao.\n");
         } while (op2 != 's' && op2 != 'S' && op2 != 'N' && op2 != 'n');
         if (op2 == 'n' ||  op2 == 'N') {
-            printf("Obrigado por usar a calculadora! Até a próxima.\n");
+            printf("Obrigado por usar a calculadora! Ate a proxima.\n");
             return 0;
         }
         system("cls");
