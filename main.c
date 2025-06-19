@@ -4,7 +4,7 @@
 #include <locale.h>
 
 int main() {
-    setlocale(LC_ALL, "portuguese");
+    setlocale(LC_ALL, "pt_BR_utf8");
     int op; char op2;
     do {
         do {
